@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Larimar y Ámbar | Bienvenidos</title>
+  <script>
+    // Función que muestra un mensaje de bienvenida cuando se carga la página
+    window.onload = function() {
+      alert("¡Bienvenido a nuestra tienda de Larimar y Ámbar!");
+    };
+
+    // Función para validar el formulario de contacto
+    function validateForm() {
+      const name = document.querySelector('input[type="text"]').value;
+      const email = document.querySelector('input[type="email"]').value;
+
+      if (name === "" || email === "") {
+        alert("Por favor, completa todos los campos.");
+        return false; // Detiene el envío del formulario
+      }
+      alert("Formulario enviado correctamente.");
+      return true; // Permite el envío del formulario
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="mainheader">
+    <nav class="navbar">
+      <div class="container">
+        <a href="#"><img src="/parcial/Logomayra.png" alt=""></a>
+        <ul>
+          <li><a href="#mainheader">Inicio</a></li>
+          <li><a href="#about">Acerca de Nosotros</a></li>
+          <li><a href="#collection">Colección</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="/parcial/Logomayra.png" alt=""></a></li>
+            <li><a href="#"><img src="/parcial/Ambar1.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="showcase py-1">
+      <div class="container">
+        <h1 class="display-1"><span>Nueva</span> Colección de Joyería</h1>
+        <p class="large w-80">Descubre nuestras piezas únicas en Larimar y Ámbar, creadas con la mayor dedicación y calidad para resaltar tu belleza.</p>
+        <a href="#collection" class="btn btn-light">Explorar Colección</a>
+      </div>
+    </div>
+  </header>   
+
+  <!-- Features -->
+   <section id="features" class="py-2">
+    <div class="container flex">
+      <div class="features-box">
+        <div class="icon-circle">
+          <img src="/parcial/Ambar1.jpg" alt="">
+        </div>
+        <h4>Diseño Auténtico</h4>
+        <p class="small w-70">Cada pieza está hecha a mano, destacando la belleza del Larimar y el Ámbar.</p>
+      </div>
+      <div class="features-box">
+        <div class="icon-circle">
+          <img src="/parcial/Larimar2.JPG" alt="">
+        </div>
+        <h4>Calidad 100%</h4>
+        <p class="small w-70">Utilizamos materiales de la más alta calidad para garantizar la durabilidad y el brillo de nuestras joyas.</p>
+      </div>
+      <div class="features-box">
+        <div class="icon-circle">
+          <img src="/parcial/Larimar3.JPG" alt="">
+        </div>
+        <h4>Soporte en Línea</h4>
+        <p class="small w-70">Nuestro equipo está siempre disponible para ayudarte con cualquier duda o consulta.</p>
+      </div>
+    </div>
+   </section>
+
+   <!-- About -->
+   <section id="about" class="py-2">
+      <div class="container flex">
+        <div class="about-image flex-2 py-2">
+          <img src="/parcial/Larimar3.JPG" alt="">
+        </div>
+        <div class="about-content flex-3 pl-1">
+          <h2 class="display-2">Acerca de <br>Nosotros</h2>
+          <img src="/parcial/Larimar4.JPG" alt="">
+          <p class="small">Nos dedicamos a la creación de joyas artesanales utilizando dos de las gemas más preciadas de la República Dominicana: el Larimar y el Ámbar. Nuestras piezas reflejan la riqueza cultural y la belleza natural de nuestra isla.</p>
+          <a href="#collection" class="btn btn-light">Explorar Colección</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section id="collection" class="py-2">
+      <div class="container flex">
+        <div class="collection-content flex-3">
+          <h2 class="display-2">Colección de <br>Joyas</h2>
+          <p class="w-80">Nuestra colección incluye una variedad de collares, anillos, pulseras y aretes hechos con Larimar y Ámbar, diseñados para todos los gustos y estilos.</p>
+          <a href="#" class="btn btn-light">Explorar Colección</a>
+        </div>
+        <div class="collection-image flex-2">
+          <img src="/parcial/Larimar1.JPG" alt="">
+        </div>
+      </div>
+     </section>
+
+     <!-- Contact -->
+     <section id="contact" class="py-2">
+        <div class="container flex">
+          <div class="contact-form flex-2">
+            <form onsubmit="return validateForm()">
+              <div class="form-group">
+                <input type="text" value="Nombre" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="email" value="Correo Electrónico" class="form-control">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" placeholder="Mensaje" class="form-control" cols="30" rows="10"></textarea>
+              </div>
+              <button class="btn btn-light">Enviar</button>
+            </form>
+          </div>
+          <div class="contact-content flex-3 pl-1">
+            <h2 class="display-2">Contáctanos</h2>
+            <p>Si tienes alguna pregunta o necesitas más información sobre nuestras joyas, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="mainfooter">
+        <p class="small">&copy; Larimar y Ámbar 2024</p>
+        <p class="small">Ubicados en Av. Mella #42, Zona Colonial</p>
+        <p class="small">Tel: 829-424-1591</p>
+      </footer>
+
+</body>
+</html>
